@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+</head>
+<body>
+
+<form method="post" action="submit.html">
+
+    <input type="hidden" name="user_id" value="USER12345">
+
+        <legend>Personal Information</legend>
+
+        <div>
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                   id="fullName" name="full_name" 
+                   required pattern="[A-Za-z]+_[A-Za-z]+"
+                   placeholder="FirstName_LastName">
+        </div>
+<br>
+        <div>
+            <label for="about">About Yourself</label>
+            <textarea id="about" 
+            name="about_yourself" 
+            rows="5" cols="50">
+        </textarea>
+        </div>
+<br>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email"
+             id="email" 
+             name="email" required>
+        </div>
+<br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password"
+                   id="password" name="password" required minlength="8">
+        </div>
+<br>
+        <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel"
+                   id="phone" name="phone" required pattern="[0-9]{10}" placeholder="10 digit number">
+        </div>
+<br>
+        <div>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+        </div>
+    
+<br>
+  
+        <legend>Skills & Preferences</legend>
+
+        <div>
+            <label>Skills</label><br>
+            <input type="checkbox" id="skillHtml" name="skills" value="HTML" checked>
+            <label for="skillHtml">HTML</label>
+
+            <input type="checkbox" id="skillCss" name="skills" value="CSS">
+            <label for="skillCss">CSS</label>
+
+            <input type="checkbox" id="skillJs" name="skills" value="JavaScript">
+            <label for="skillJs">JavaScript</label>
+        </div>
+<br>
+        <div>
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+<br>
+        <div>
+            <label for="color">Preferred Color</label>
+            <input type="color" id="color" name="preferred_color" value="#0000ff">
+        </div>
+<br>
+        <div>
+            <label for="experience">Experience Level</label>
+            <input type="range"
+                   id="experience" name="experience_level" min="0"  max="10" step="2">
+        </div>
+<br>
+        <div>
+            <label for="search">Search Interest</label>
+            <input type="search" id="search" name="search_interest">
+        </div>
+   
+<br>
+   
+        <legend>Date & Time</legend>
+
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="date_of_birth"  max="2005-12-31">
+        </div>
+<br>
+        <div>
+            <label for="time">Available Time</label>
+            <input type="time"
+                   id="time" name="available_time" min="09:00" max="18:30">
+        </div>
+<br>
+        <div>
+            <label for="joiningMonth">Joining Month</label>
+            <input type="month" id="joiningMonth" name="joining_month" value="2026-01">
+        </div>
+<br>
+        <div>
+            <label for="trainingWeek">Training Week</label>
+            <input type="week" id="trainingWeek" name="training_week" value="2026-W07" readonly>
+        </div>
+<br>
+        <div>
+            <label for="interview">Interview Slot</label>
+            <input type="datetime-local" id="interview" name="interview_slot">
+        </div>
+   
+<br>
+    
+        <legend>Selection & Upload</legend>
+
+        <div>
+            <label for="technology">Technology</label>
+            <select id="technology" name="technology">
+                <option value=".Net">.Net</option>
+                <option value="Angular">Angular</option>
+                <option value="Java">Java</option>
+                <option value="ReactJS">ReactJS</option>
+                <option value="QA">QA</option>
+            </select>
+        </div>
+<br>
+        <div>
+            <label for="resume">Resume Upload</label>
+            <input type="file"  id="resume" name="resume" accept="application/pdf">
+        </div>
+    
+<br>
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button type="button">Button</button>
+    </div>
+
+</form>
+
+</body>
+</html>
