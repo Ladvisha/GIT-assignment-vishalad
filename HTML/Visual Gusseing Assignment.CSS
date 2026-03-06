@@ -1,0 +1,55 @@
+body {
+    background-color: #a9c3cf;
+    font-family: Georgia, serif;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.styled-text {
+    text-transform: lowercase;
+    letter-spacing: 8px;
+    word-spacing: 15px;
+    color: red;
+    text-align: center;
+    border-top: 2px solid gray;
+    padding-top: 10px;
+    text-shadow: 2px 2px 3px gray;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.box {
+    width: 250px;
+    height: 120px;
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #b8ccd6;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}
