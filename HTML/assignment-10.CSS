@@ -1,0 +1,102 @@
+
+.intro::first-letter{
+    font-size:40px;
+    font-weight:bold;
+    color:blue;
+}
+
+
+.news p::first-line{
+    background-color:yellow;
+    font-weight:bold;
+}
+
+
+.important::before{
+    content:"NOTE: ";
+    color:red;
+    font-weight:bold;
+}
+
+
+.copyright::after{
+    content:" © 2026";
+}
+
+
+.task-list li:first-child{
+    color:red;
+}
+
+.task-list li:nth-child(2){
+    font-weight:bold;
+}
+
+.task-list li:last-child{
+    color:blue;
+}
+
+
+.items li:nth-child(odd){
+    background-color:#f2f2f2;
+}
+
+.items li:nth-child(even){
+    background-color:#ddd;
+}
+
+
+a[target="_blank"]{
+    color:red;
+}
+
+a[href^="https"]{
+    font-weight:bold;
+}
+
+a:hover{
+    color:green;
+}
+
+
+img[src$=".png"]{
+    border:4px solid black;
+}
+
+
+input[placeholder*="Search"]{
+    background-color:#f9f9c5;
+}
+
+
+.container p{
+    color:purple;
+}
+
+
+.direct > p{
+    color:orange;
+}
+
+
+h3 + p{
+    color:teal;
+}
+
+
+.heading2 ~ p{
+    font-style:italic;
+}
+
+
+input:focus{
+    border:2px solid blue;
+    outline:none;
+    background-color:#eef;
+}
+
+
+input[type="checkbox"]:checked + label{
+    color:red;
+    font-weight:bold;
+}

@@ -1,0 +1,61 @@
+body{
+font-family: Arial;
+background: linear-gradient(to right, #7ec8e3, #f6c6a6);
+padding:40px;
+}
+
+/* Box 1 Absolute */
+.box1{
+position:absolute;
+top:20px;
+right:40px;
+background:#e97aa5;
+padding:15px;
+transform:rotate(-20deg);
+}
+
+/* Box 2 */
+.box2{
+width:70px;
+height:120px;
+background:purple;
+color:white;
+text-align:center;
+padding-top:40px;
+margin:200px auto;
+}
+
+/* Box 3 Fixed */
+.box3{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#d6c68f;
+padding:20px;
+font-size:22px;
+}
+
+/* Box 4 */
+.box4{
+position:absolute;
+left:10px;
+top:60px;
+background:#ff8c66;
+padding:15px;
+}
+
+/* Box 5 Sticky */
+.box5{
+position:sticky;
+top:20px;
+left:100px;
+width:150px;
+background:#a8b8cc;
+padding:20px;
+}
+
+p{
+margin-top:40px;
+line-height:1.6;
+text-align:justify;
+}
